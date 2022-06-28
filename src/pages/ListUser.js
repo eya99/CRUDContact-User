@@ -46,7 +46,7 @@ const registre =async (form) =>{
   return (
  <div >
     <Navbar />
-    <div  className ="mt-5 " style={{width:'100%',display:'flex',justifyContent:'center'}}>
+    <div  className ="mt-5 " style={{maxWidth:'100vw',display:'flex',justifyContent:'center'}}>
     <h1 className="styleh1" >   قائمة المشتركين  </h1>
   
     </div>

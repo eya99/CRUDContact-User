@@ -16,6 +16,8 @@
     width: 16%;
     color: black;
     text-align: center;
+    /* */
+    font-size:calc(20px + 0.1vw);
     padding-top:4rem;
     padding-bottom:.4rem;
 }
