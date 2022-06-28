@@ -3,12 +3,10 @@
   
   export const getContact = () => async (dispatch) => {
     try {
-      console.log("oayyy")
       dispatch({ type: "CONTACT_LIST_REQUEST" });
   
      
       const { data } =  await axios.get("http://localhost:4000/Atlantis/Contacts/getAll");
- console.log(data)
       dispatch({
         type: "CONTACT_LIST_SUCCESS",
         //I need to fill payload with data because as mentiond in the reducer
@@ -33,7 +31,6 @@
       dispatch({
         type: "CONTACT_DELETE_REQUEST", 
       });
-    console.log(_id)       
       const config = {
         headers: {
          

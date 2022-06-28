@@ -5,7 +5,6 @@
         return { loading: true, contact: [] };
       case "CONTACT_LIST_SUCCESS":
         //if it succeeded getting Contacts Contacts will be filled with payload(our results)
-        console.log(action.payload);
         return { loading: false, contact: action.payload };
       case "CONTACT_LIST_FAIL":
         return { loading: false, error: action.payload };

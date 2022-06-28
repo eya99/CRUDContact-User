@@ -7,7 +7,6 @@
   
      
       const { data } =  await axios.get("http://localhost:4000/Atlantis/users/getAll");
- console.log(data)
       dispatch({
         type: "USER_LIST_SUCCESS",
         //I need to fill payload with data because as mentiond in the reducer
@@ -38,13 +37,11 @@
         } 
     }
      const {data}= await axios.post(`http://localhost:4000/Atlantis/user/add`,users,{config});
-     console.log(data)  
          dispatch({
         type: "USER_CREATE_SUCCESS",payload:data
       });
       
     } catch (error) {
-      console.error(error+"hey")
       dispatch({
         // type: USER_LOGIN_FAIL,
         type: "USER_CREATE_FAIL",

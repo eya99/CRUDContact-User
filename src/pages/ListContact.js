@@ -76,7 +76,7 @@ const ListContact = () => {
      </div>
       ):(
         <div className="row mt-5" >
-        <Message variant='danger'>لا يوجد شيء </Message>
+        <Message variant='danger'>لا يوجد متواصلون  </Message>
       
 
          </div>

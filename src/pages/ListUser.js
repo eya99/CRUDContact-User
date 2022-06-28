@@ -85,7 +85,7 @@ const registre =async (form) =>{
      </div>):(
       
         <div className="row mt-5" >
-        <Message variant='danger'>لا يوجد شيء </Message>
+        <Message variant='danger'>لا يوجد  مشتركين   </Message>
 
          </div>
       )}    
